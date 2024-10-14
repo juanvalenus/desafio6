@@ -1,0 +1,114 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Columna de contactos */
+.contacts-section {
+    flex: 0 0 25%; /* Tamaño fijo de la columna de contactos */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.user-status {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    flex-direction: column; /* Alinea "En Línea" debajo de "Maria" */
+}
+
+.user-status img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.contacts-list {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.contact img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-chat-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.new-chat-btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Columna principal */
+.main-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.logo-text img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.logo-text p {
+    font-size: 18px;
+    color: #666;
+}
